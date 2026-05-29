@@ -17,6 +17,36 @@ This repository should be read like an infrastructure specification project:
 
 The goal is to resemble the role that OpenAPI, FHIR, and DICOM play in their ecosystems, but focused on AI-ready dental context.
 
+## Quickstart
+
+Generate and validate a Dental Case Packet from the sample input in under five minutes:
+
+```bash
+git clone https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet.git
+cd ai-ready-dental-case-packet
+
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+
+python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
+python -m dental_packet validate --input ./case_packet_output/case_packet.json
+```
+
+Expected output:
+
+```text
+Built case packet: case_packet_output/case_packet.json
+case_packet.json is valid
+```
+
+The generated packet and report will be available at:
+
+```text
+case_packet_output/case_packet.json
+case_packet_output/case_packet.md
+```
+
 ## Design Principles
 
 - Do not diagnose.
@@ -49,6 +79,8 @@ Think of the long-term direction as **DICOM + FHIR + LangChain for dentistry**.
 ## Repository Map
 
 ```text
+.github/workflows/
+  ci.yml
 spec/
   dental-case-packet-v0.1.md
   dental-case-packet.schema.json
@@ -64,13 +96,17 @@ examples/
   case_packets/
     minimal-v0.1.json
     imaging-rich-v0.1.json
+  sample_input/
+  sample_output/
 src/dental_packet/
   reference implementation CLI
 ```
 
 ## Reference Implementation
 
-## Install
+The Python package in `src/dental_packet/` is the v0.1 reference implementation for the Dental Case Packet Specification. It is intentionally local-first and deterministic.
+
+### Install
 
 ```bash
 python -m venv .venv
@@ -78,12 +114,12 @@ source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 
-## CLI Usage
+### CLI Usage
 
 Build a packet:
 
 ```bash
-python -m dental_packet build --input ./project-input --output ./case_packet_output
+python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
 ```
 
 Validate a generated packet:
@@ -91,6 +127,29 @@ Validate a generated packet:
 ```bash
 python -m dental_packet validate --input ./case_packet_output/case_packet.json
 ```
+
+### Developer Checks
+
+```bash
+ruff check .
+pytest
+python -m dental_packet build --input ./examples/sample_input --output ./case_packet_output
+python -m dental_packet validate --input ./case_packet_output/case_packet.json
+```
+
+## v0.1 Release Checklist
+
+- [x] Install works with `pip install -e ".[dev]"`.
+- [x] Build command works.
+- [x] Validate command works.
+- [x] Sample input exists.
+- [x] Sample output exists.
+- [x] Tests pass.
+- [x] PHI fields are not exported.
+- [x] `case_packet.json` follows the schema.
+- [x] Manifest includes SHA-256 hashes.
+- [x] Markdown report is generated.
+- [x] GitHub Actions CI runs ruff, pytest, build, and validate.
 
 ## Infrastructure Layers
 
