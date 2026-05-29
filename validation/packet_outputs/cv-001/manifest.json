@@ -1,11 +1,11 @@
 {
-  "created_at": "2026-05-29T13:36:32.308107Z",
+  "created_at": "2026-05-29T14:06:16.583277Z",
   "input_root": "validation/cases/cv-001",
   "files": [
     {
       "file_type": "dicom",
       "path": "cbct/slice_0001.dcm",
-      "sha256": "5113aec567a99fd05dc92514d0d18351f15bda5b21bf16dcdd7ea03501254ffe",
+      "sha256": "5a0bf451cf7b6c2bdad84ee23bb03fb313ca8d9e9b2b1dde99a5d7d1cd59409f",
       "size_bytes": 680,
       "extension": "dcm",
       "role": "cbct"

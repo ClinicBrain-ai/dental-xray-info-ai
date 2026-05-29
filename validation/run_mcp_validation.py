@@ -389,8 +389,9 @@ def write_validation_report(results: list[dict[str, Any]]) -> None:
         warnings = "; ".join(item["warnings"]) if item["warnings"] else "none"
         schema_issues = "; ".join(item["schema_issues"]) if item["schema_issues"] else "none"
         lines.append(
-            "| {case_id} | {source_dataset} | {modality} | {validation_focus} | {build_success} | "
             (
+                "| {case_id} | {source_dataset} | {modality} | {validation_focus} | "
+                "{build_success} | "
                 "{validation_success} | {phi_risk_level} | {mcp_success} | "
                 "{warnings} | {schema_issues} |"
             ).format(

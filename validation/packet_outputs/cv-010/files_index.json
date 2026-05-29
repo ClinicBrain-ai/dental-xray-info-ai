@@ -2,7 +2,7 @@
   {
     "file_type": "dicom",
     "path": "cbct/slice_0001.dcm",
-    "sha256": "e3c93e744d5567ca808a22e54dcf9d5be43a2a3b6887c6373137a8c7d771bb72",
+    "sha256": "cf908926e6bfbc3b63728b513430797187eb607ddaa3b35869caa623ceca9825",
     "size_bytes": 676,
     "extension": "dcm",
     "role": "cbct"

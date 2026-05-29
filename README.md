@@ -199,9 +199,11 @@ python -m dental_packet build --input ./examples/sample_input --output ./case_pa
 python -m dental_packet validate --input ./case_packet_output/case_packet.json
 ```
 
-## Using Dental Case Packet as an Agent Tool via MCP
+## Local MCP Server
 
-The repository includes a local MCP server wrapper for AI agents that need structured dental data transformation tools. The MCP server is local-first: it does not send patient data to external APIs, does not diagnose, and does not recommend treatment.
+This project can now be used as an MCP-compatible local tool layer for AI agents. The MCP server exposes Dental Case Packet operations as local tools for structured data transformation.
+
+Patient data can remain local. The MCP server does not send patient data to external APIs, does not diagnose, and does not recommend treatment.
 
 Install the MCP optional dependencies:
 
@@ -217,11 +219,11 @@ python -m dental_packet_mcp
 
 The server exposes tools for:
 
-- Building a Dental Case Packet from an input folder.
-- Validating a generated `case_packet.json`.
-- Returning a non-diagnostic packet summary.
-- Listing supported file formats.
-- Checking obvious PHI risk without printing PHI values.
+- `build_dental_case_packet`: build a Dental Case Packet from an input folder.
+- `validate_case_packet`: validate a generated `case_packet.json`.
+- `summarize_packet`: return a non-diagnostic packet summary.
+- `list_supported_formats`: list supported file formats.
+- `check_phi_risk`: check obvious PHI risk without printing PHI values.
 
 See [docs/mcp-server.md](docs/mcp-server.md) and [examples/mcp_agent_example.py](examples/mcp_agent_example.py).
 
