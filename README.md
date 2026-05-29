@@ -1,10 +1,21 @@
 # ai-ready-dental-case-packet
 
-`ai-ready-dental-case-packet` is an open-source foundation for **AI-native Dental Data Infrastructure**.
+`ai-ready-dental-case-packet` is an open specification project for **AI-native Dental Data Infrastructure**.
 
-It transforms dental records into a de-identified, portable, structured Dental Case Packet that can become the context layer for LLMs, agent frameworks, clinical review systems, dental copilots, and future dental foundation models.
+The project defines the **Dental Case Packet Specification**: a portable, de-identified context format for making dental records usable by LLMs, agent frameworks, clinical review systems, dental copilots, and future dental foundation models.
 
-This is not a dental chatbot and not a diagnostic AI application. It is infrastructure: a standards-oriented packet builder for organizing dental data into AI-ready context.
+This is not a dental chatbot and not a diagnostic AI application. It is an open standard plus a reference implementation for organizing dental data into AI-ready context.
+
+## Specification First
+
+This repository should be read like an infrastructure specification project:
+
+- `spec/` contains normative specification artifacts.
+- `rfcs/` contains design proposals and compatibility decisions.
+- `examples/case_packets/` contains versioned example packets.
+- `src/dental_packet/` is a reference implementation, not the product itself.
+
+The goal is to resemble the role that OpenAPI, FHIR, and DICOM play in their ecosystems, but focused on AI-ready dental context.
 
 ## Design Principles
 
@@ -35,7 +46,29 @@ This project creates the Dental Case Packet: a standardized context object that 
 
 Think of the long-term direction as **DICOM + FHIR + LangChain for dentistry**.
 
-## Current MVP
+## Repository Map
+
+```text
+spec/
+  dental-case-packet-v0.1.md
+  dental-case-packet.schema.json
+  validation-rules.md
+  versioning.md
+  compatibility.md
+  fhir-interoperability.md
+rfcs/
+  0001-dental-case-packet-v0.1.md
+  0002-privacy-first-packet-generation.md
+  0003-fhir-interoperability-design.md
+examples/
+  case_packets/
+    minimal-v0.1.json
+    imaging-rich-v0.1.json
+src/dental_packet/
+  reference implementation CLI
+```
+
+## Reference Implementation
 
 ## Install
 
@@ -132,6 +165,12 @@ This project is for data organization, de-identification, format conversion, ind
 
 ## Specification And Architecture
 
+- [Dental Case Packet Specification v0.1](spec/dental-case-packet-v0.1.md)
+- [JSON Schema](spec/dental-case-packet.schema.json)
+- [Validation Rules](spec/validation-rules.md)
+- [Versioning Strategy](spec/versioning.md)
+- [Compatibility Strategy](spec/compatibility.md)
+- [FHIR Interoperability Design](spec/fhir-interoperability.md)
 - [Dental Case Packet Specification v0.1](docs/packet-spec.md)
 - [Architecture Review](docs/architecture-review.md)
 - [Roadmap](docs/roadmap.md)

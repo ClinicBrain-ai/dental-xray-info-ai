@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clinicbrain.ai/spec/dental-case-packet/v0.1/schema.json",
+  "title": "Dental Case Packet",
+  "description": "AI-ready, de-identified dental case context for clinical review only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "created_at",
+    "patient",
+    "chief_complaint",
+    "clinical_notes_summary",
+    "treatment_plan_summary",
+    "imaging",
+    "ai_ready_context",
+    "safety"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._:-]+$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "patient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["age", "sex", "deidentified"],
+      "properties": {
+        "age": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 120
+        },
+        "sex": {
+          "type": ["string", "null"],
+          "enum": ["F", "M", "X", "unknown", null]
+        },
+        "deidentified": {
+          "const": true
+        }
+      }
+    },
+    "chief_complaint": {
+      "type": "string"
+    },
+    "clinical_notes_summary": {
+      "type": "string"
+    },
+    "treatment_plan_summary": {
+      "type": "string"
+    },
+    "imaging": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cbct", "xray", "intraoral_scan", "photos"],
+      "properties": {
+        "cbct": {
+          "$ref": "#/$defs/cbct"
+        },
+        "xray": {
+          "$ref": "#/$defs/fileCollection"
+        },
+        "intraoral_scan": {
+          "$ref": "#/$defs/intraoralScan"
+        },
+        "photos": {
+          "$ref": "#/$defs/fileCollection"
+        }
+      }
+    },
+    "ai_ready_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_overview",
+        "known_information",
+        "missing_information",
+        "clinical_review_questions",
+        "llm_prompt_context"
+      ],
+      "properties": {
+        "case_overview": {
+          "type": "string"
+        },
+        "known_information": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "missing_information": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "clinical_review_questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "llm_prompt_context": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["not_for_diagnosis", "requires_dentist_review", "phi_removed"],
+      "properties": {
+        "not_for_diagnosis": { "const": true },
+        "requires_dentist_review": { "const": true },
+        "phi_removed": { "const": true }
+      }
+    }
+  },
+  "$defs": {
+    "cbct": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "series_count", "dicom_metadata_summary", "warnings"],
+      "properties": {
+        "available": { "type": "boolean" },
+        "series_count": { "type": "integer", "minimum": 0 },
+        "dicom_metadata_summary": { "type": "object" },
+        "warnings": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "fileCollection": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["available", "files"],
+      "properties": {
+        "available": { "type": "boolean" },
+        "files": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      }
+    },
+    "intraoralScan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "files", "formats"],
+      "properties": {
+        "available": { "type": "boolean" },
+        "files": {
+          "type": "array",
+          "items": { "type": "object" }
+        },
+        "formats": {
+          "type": "array",
+          "items": { "enum": ["stl", "ply", "obj"] },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}
+
