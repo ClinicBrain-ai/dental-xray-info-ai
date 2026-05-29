@@ -1,25 +1,19 @@
 # ai-ready-dental-case-packet
 
-`ai-ready-dental-case-packet` is an open specification project for **AI-native Dental Data Infrastructure**.
+Build a de-identified Dental Case Packet from local dental records.
 
-The project defines the **Dental Case Packet Specification**: a portable, de-identified context format for making dental records usable by LLMs, agent frameworks, clinical review systems, dental copilots, and future dental foundation models.
+This repository contains:
 
-This is not a dental chatbot and not a diagnostic AI application. It is an open standard plus a reference implementation for organizing dental data into AI-ready context.
+- A v0.1 Dental Case Packet specification.
+- A local Python CLI that builds and validates packets.
+- Runnable sample input and sample output.
+- Tests and CI for the reference implementation.
 
-## Specification First
+The CLI reads files like clinical notes, treatment plans, DICOM folders, images, and scan files. It writes structured JSON, Markdown, file manifests, logs, and de-identified text copies.
 
-This repository should be read like an infrastructure specification project:
+It does **not** diagnose, recommend treatment, or claim clinical accuracy. Every output is for dentist review only.
 
-- `spec/` contains normative specification artifacts.
-- `rfcs/` contains design proposals and compatibility decisions.
-- `examples/case_packets/` contains versioned example packets.
-- `src/dental_packet/` is a reference implementation, not the product itself.
-
-The goal is to resemble the role that OpenAPI, FHIR, and DICOM play in their ecosystems, but focused on AI-ready dental context.
-
-## Quickstart
-
-Generate and validate a Dental Case Packet from the sample input in under five minutes:
+## 30-Second Quickstart
 
 ```bash
 git clone https://github.com/ClinicBrain-ai/ai-ready-dental-case-packet.git
@@ -40,12 +34,27 @@ Built case packet: case_packet_output/case_packet.json
 case_packet.json is valid
 ```
 
-The generated packet and report will be available at:
+Generated files:
 
 ```text
 case_packet_output/case_packet.json
 case_packet_output/case_packet.md
+case_packet_output/manifest.json
+case_packet_output/files_index.json
+case_packet_output/deidentified/
+case_packet_output/logs/
 ```
+
+## What This Is
+
+This repository should be read like an infrastructure specification project:
+
+- `spec/` contains normative specification artifacts.
+- `rfcs/` contains design proposals and compatibility decisions.
+- `examples/case_packets/` contains versioned example packets.
+- `src/dental_packet/` is a reference implementation, not the product itself.
+
+For a more detailed walkthrough, see [docs/quickstart.md](docs/quickstart.md).
 
 ## Design Principles
 
@@ -81,6 +90,11 @@ Think of the long-term direction as **DICOM + FHIR + LangChain for dentistry**.
 ```text
 .github/workflows/
   ci.yml
+docs/
+  quickstart.md
+  architecture-review.md
+  roadmap.md
+  packet-spec.md
 spec/
   dental-case-packet-v0.1.md
   dental-case-packet.schema.json
@@ -150,6 +164,8 @@ python -m dental_packet validate --input ./case_packet_output/case_packet.json
 - [x] Manifest includes SHA-256 hashes.
 - [x] Markdown report is generated.
 - [x] GitHub Actions CI runs ruff, pytest, build, and validate.
+- [x] Changelog exists.
+- [x] Quickstart docs exist.
 
 ## Infrastructure Layers
 
