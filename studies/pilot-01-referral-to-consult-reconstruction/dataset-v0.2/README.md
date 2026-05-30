@@ -56,3 +56,16 @@ No case abstraction has been performed yet, no case text has been copied, and no
 - [Abstraction safeguards checklist](abstraction-safeguards-checklist.md)
 - [Abstraction output template](abstraction-output-template.md)
 - [Pre-abstraction review memo](pre-abstraction-review-memo.md)
+
+## Dataset v0.2.2 Limited Abstraction Dry Run
+
+Dataset v0.2.2 contains a 2-candidate abstraction dry run. This is not the full Dataset v0.2 abstraction step.
+
+The dry-run abstractions are paraphrased educational artifacts only. They are not real clinical documentation and are not clinical guidance. No source narrative text was copied, and no patient-identifying information was added. Human review should occur before coding.
+
+- [Dry-run README](abstraction-dry-run-v0.2.2/README.md)
+- [Selection rationale](abstraction-dry-run-v0.2.2/selection-rationale.md)
+- [Case abstractions](abstraction-dry-run-v0.2.2/case-abstractions/)
+- [Safeguards compliance log](abstraction-dry-run-v0.2.2/safeguards-compliance-log.md)
+- [Dry-run quality review](abstraction-dry-run-v0.2.2/dry-run-quality-review.md)
+- [Dry-run memo](abstraction-dry-run-v0.2.2/dry-run-memo.md)
