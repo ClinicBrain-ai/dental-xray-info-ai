@@ -22,3 +22,14 @@ The purpose is methodology testing only: to examine whether the reconstruction p
 - [Compression vs uncertainty-loss rule](compression-vs-uncertainty-loss-rule.md)
 - [Execution plan](execution-plan.md)
 - [Future Research Note 002 scaffold](future-research-note-002.md)
+
+## Candidate Source Selection
+
+Dataset v0.2 candidate source selection has begun. No source text has been copied, no paraphrased case abstraction has been created, and no patient-identifying information has been added.
+
+- [Candidate source index](candidate-source-index.md)
+- [Selected case shortlist](selected-case-shortlist.md)
+- [Exclusion log](exclusion-log.md)
+- [Source-selection memo](source-selection-memo.md)
+
+Selected cases still require abstraction and second-review before coding.
