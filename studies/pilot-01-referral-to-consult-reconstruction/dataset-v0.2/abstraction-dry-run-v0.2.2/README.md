@@ -17,3 +17,13 @@ No source narrative text should be copied into this folder. The dry run exists t
 ## Status
 
 The two abstractions are ready for human review. They are not ready for coding until a reviewer verifies that no source text, patient-identifying information, or clinical-guidance language has been introduced.
+
+## Human Review Packet
+
+Human review is required before coding. The coding gate remains closed until review is complete, and the remaining 8 candidates should not be abstracted until the dry-run review is complete.
+
+- [Human review README](human-review-v0.2.3/README.md)
+- [Reviewer instructions](human-review-v0.2.3/reviewer-instructions.md)
+- [ABS-001 human review form](human-review-v0.2.3/ABS-001-human-review-form.md)
+- [ABS-002 human review form](human-review-v0.2.3/ABS-002-human-review-form.md)
+- [Coding gate decision](human-review-v0.2.3/coding-gate-decision.md)
