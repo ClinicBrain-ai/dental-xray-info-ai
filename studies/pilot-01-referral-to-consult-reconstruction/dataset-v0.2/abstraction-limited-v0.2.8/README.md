@@ -34,7 +34,9 @@ Limited coding has been performed for `ABS-003` and `ABS-004` only in [coding-v0
 
 No additional abstractions were created. No additional cases were coded. Research Note 002 remains prohibited. The remaining candidates remain on hold.
 
-The post-coding review gate is closed pending human review.
+Post-coding human review accepted the limited coding outputs with caution.
+
+Dataset v0.2.8 is closed after this limited coding pass. No additional coding, additional abstraction, full Dataset v0.2 expansion, clinical validation claim, clinical guidance, diagnosis, treatment recommendation, or patient-care advice is authorized.
 
 ## Source-Use Boundary
 

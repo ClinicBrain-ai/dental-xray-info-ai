@@ -1,6 +1,8 @@
 # Dataset v0.2.8 Post-Coding Review Gate
 
-Gate status: `closed pending post-coding human review`
+Gate status: `closed after limited coding pass`
+
+Decision source: [Dataset v0.2.8 post-coding human review decision](post-coding-human-review-decision.md)
 
 ## Review Scope
 
@@ -24,6 +26,18 @@ Human review should evaluate:
 
 ## Current Decision
 
-No post-coding review decision has been recorded.
+Post-coding human review has been completed.
 
-No additional coding, abstraction, Dataset v0.2 expansion, or Research Note 002 work is authorized by this file.
+Decision: accept limited coding outputs with caution.
+
+Gate outcome: close v0.2.8 after this limited coding pass.
+
+## Conditions
+
+- No additional coding is authorized by this decision.
+- No additional abstraction is authorized by this decision.
+- Remaining candidates remain on hold.
+- No full Dataset v0.2 expansion is authorized.
+- No clinical validation claims are authorized.
+- No clinical guidance, diagnosis, treatment recommendation, or patient-care advice is authorized.
+- Research Note 002 remains prohibited.

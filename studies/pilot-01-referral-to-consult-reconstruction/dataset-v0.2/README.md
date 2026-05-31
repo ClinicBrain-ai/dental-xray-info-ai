@@ -118,5 +118,14 @@ This coding is methodological only. It is not clinical validation, not clinical 
 - [Transformation summary](abstraction-limited-v0.2.8/coding-v0.2.8/transformation-summary.md)
 - [Coding memo](abstraction-limited-v0.2.8/coding-v0.2.8/coding-memo.md)
 - [Post-coding review gate](abstraction-limited-v0.2.8/coding-v0.2.8/post-coding-review-gate.md)
+- [Post-coding human review decision](abstraction-limited-v0.2.8/coding-v0.2.8/post-coding-human-review-decision.md)
 
 No additional abstractions were created. No additional cases were coded. Remaining candidates remain on hold. Research Note 002 remains prohibited.
+
+## Dataset v0.2.8 Post-Coding Review Decision
+
+Issue #5 human post-coding review accepted the `ABS-003` and `ABS-004` limited coding outputs with caution.
+
+Gate outcome: Dataset v0.2.8 is closed after this limited coding pass.
+
+No additional coding is authorized. No additional abstraction is authorized. No full Dataset v0.2 expansion is authorized. Remaining candidates remain on hold. Research Note 002 remains prohibited.
