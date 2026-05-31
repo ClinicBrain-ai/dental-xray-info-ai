@@ -16,6 +16,7 @@ This is not coding, not clinical validation, and not clinical guidance. The abst
 - [Safeguards compliance log](safeguards-compliance-log.md)
 - [Abstraction quality review](abstraction-quality-review.md)
 - [Abstraction memo](abstraction-memo.md)
+- [Pre-push abstraction safety review](pre-push-abstraction-safety-review.md)
 
 ## Current Status
 
