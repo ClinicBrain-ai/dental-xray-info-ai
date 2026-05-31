@@ -82,3 +82,16 @@ The pre-abstraction human review decision authorizes limited educational abstrac
 - [Pre-abstraction gate v0.2.7](pre-abstraction-gate-v0.2.7.md)
 - [Pre-abstraction human review decision v0.2.7](pre-abstraction-human-review-decision-v0.2.7.md)
 - [GitHub issue draft v0.2.7](github-issue-draft-v0.2.7.md)
+
+## Dataset v0.2.8 Limited Educational Abstraction
+
+Dataset v0.2.8 creates limited educational abstractions for `CAND-010` and `CAND-016` only.
+
+The resulting abstractions are draft methodology artifacts, not clinical documentation, not clinical guidance, and not ready for coding. Human review is required before any coding gate may be considered. The full remaining batch remains closed and Research Note 002 remains prohibited.
+
+- [Limited abstraction README](abstraction-limited-v0.2.8/README.md)
+- [ABS-003](abstraction-limited-v0.2.8/case-abstractions/ABS-003.md)
+- [ABS-004](abstraction-limited-v0.2.8/case-abstractions/ABS-004.md)
+- [Safeguards compliance log](abstraction-limited-v0.2.8/safeguards-compliance-log.md)
+- [Abstraction quality review](abstraction-limited-v0.2.8/abstraction-quality-review.md)
+- [Abstraction memo](abstraction-limited-v0.2.8/abstraction-memo.md)

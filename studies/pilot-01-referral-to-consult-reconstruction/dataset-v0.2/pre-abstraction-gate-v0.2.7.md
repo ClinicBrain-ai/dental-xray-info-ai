@@ -17,7 +17,7 @@ This gate applies only to these 2 candidates. It does not open the remaining can
 
 The v0.2.7 pre-abstraction human review decision has been recorded.
 
-Limited educational abstraction is authorized only for `CAND-010` and `CAND-016`. No abstraction has begun in this decision-record step. No coding has begun. No source case text has been inspected, copied, quoted, or scraped. No patient-identifying information has been added. No clinical guidance has been created.
+Limited educational abstraction is authorized only for `CAND-010` and `CAND-016`. The decision-record step did not itself create abstractions. Dataset v0.2.8 now contains draft limited educational abstractions for those two candidates only. No coding has begun. No source case text has been inspected, copied, quoted, or scraped. No patient-identifying information has been added. No clinical guidance has been created.
 
 ## Requirements Before Abstraction
 
@@ -63,4 +63,8 @@ See [pre-abstraction human review decision v0.2.7](pre-abstraction-human-review-
 
 ## Default Next Step
 
-The default next step is limited educational abstraction of `CAND-010` and `CAND-016` only, followed by human review before any coding.
+Limited educational abstraction of `CAND-010` and `CAND-016` has been completed in Dataset v0.2.8 as draft methodology artifacts.
+
+The next step is human review of `ABS-003` and `ABS-004` before any coding.
+
+- [Dataset v0.2.8 limited abstraction](abstraction-limited-v0.2.8/README.md)
