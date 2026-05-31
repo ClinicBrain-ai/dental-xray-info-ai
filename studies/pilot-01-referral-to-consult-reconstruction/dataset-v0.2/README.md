@@ -97,6 +97,7 @@ The resulting abstractions are draft methodology artifacts, not clinical documen
 - [Abstraction memo](abstraction-limited-v0.2.8/abstraction-memo.md)
 - [Human abstraction review decision](abstraction-limited-v0.2.8/human-abstraction-review-decision.md)
 - [Limited coding gate decision](abstraction-limited-v0.2.8/limited-coding-gate-decision.md)
+- [Limited coding v0.2.8](abstraction-limited-v0.2.8/coding-v0.2.8/)
 
 ## Dataset v0.2.8 Human Abstraction Review Decision
 
@@ -104,4 +105,18 @@ Human abstraction review has been completed for `ABS-003` and `ABS-004`.
 
 Gate status: `open for ABS-003 / ABS-004 limited coding only`.
 
-No coding has been performed in the decision-record step. Remaining candidates remain on hold. Research Note 002 remains prohibited.
+## Dataset v0.2.8 Limited Coding
+
+Limited coding has been performed for `ABS-003` and `ABS-004` only.
+
+This coding is methodological only. It is not clinical validation, not clinical guidance, and not full Dataset v0.2 coding.
+
+- [Limited coding README](abstraction-limited-v0.2.8/coding-v0.2.8/README.md)
+- [ABS-003 coding](abstraction-limited-v0.2.8/coding-v0.2.8/case-coding/ABS-003-coding.md)
+- [ABS-004 coding](abstraction-limited-v0.2.8/coding-v0.2.8/case-coding/ABS-004-coding.md)
+- [Results table](abstraction-limited-v0.2.8/coding-v0.2.8/results-table.md)
+- [Transformation summary](abstraction-limited-v0.2.8/coding-v0.2.8/transformation-summary.md)
+- [Coding memo](abstraction-limited-v0.2.8/coding-v0.2.8/coding-memo.md)
+- [Post-coding review gate](abstraction-limited-v0.2.8/coding-v0.2.8/post-coding-review-gate.md)
+
+No additional abstractions were created. No additional cases were coded. Remaining candidates remain on hold. Research Note 002 remains prohibited.

@@ -19,6 +19,7 @@ This is not coding, not clinical validation, and not clinical guidance. The abst
 - [Pre-push abstraction safety review](pre-push-abstraction-safety-review.md)
 - [Human abstraction review decision](human-abstraction-review-decision.md)
 - [Limited coding gate decision](limited-coding-gate-decision.md)
+- [Limited coding v0.2.8](coding-v0.2.8/)
 
 ## Current Status
 
@@ -29,7 +30,11 @@ Two limited educational abstractions have been created:
 
 Human abstraction review has been completed for both abstractions.
 
-Limited coding is open for `ABS-003` and `ABS-004` only. No coding has been performed in this decision-record step. Research Note 002 remains prohibited. The remaining candidates remain on hold.
+Limited coding has been performed for `ABS-003` and `ABS-004` only in [coding-v0.2.8](coding-v0.2.8/).
+
+No additional abstractions were created. No additional cases were coded. Research Note 002 remains prohibited. The remaining candidates remain on hold.
+
+The post-coding review gate is closed pending human review.
 
 ## Source-Use Boundary
 
