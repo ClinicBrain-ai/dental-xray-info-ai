@@ -2,6 +2,16 @@
 
 Studying the transformation of clinical cognition in distributed human-AI healthcare systems.
 
+## Start Here
+
+For new readers, [Status Report v1.0](docs/status-report-v1.0.md) is the best entry point for understanding the current repository status, completed work, active boundaries, and closed Dataset v0.2 cycle.
+
+- [Status Report v1.0](docs/status-report-v1.0.md)
+- [Manifesto](docs/manifesto.md)
+- [Research Note 001](research-notes/001-synthetic-referral-consult-reconstruction-feasibility.md)
+
+This repository is research-oriented and educational; it does not provide clinical guidance, diagnosis, treatment recommendations, or patient-care advice.
+
 ## Why This Lab Exists
 
 Healthcare is entering a period in which clinical judgment is no longer produced only inside the mind of an individual clinician. Decisions increasingly emerge through interactions among clinicians, AI systems, documentation artifacts, institutional workflows, healthcare organizations, patients, and caregivers.
