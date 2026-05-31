@@ -13,6 +13,25 @@ Acceptable materials include:
 
 The purpose is methodology testing only: to examine whether the reconstruction protocol, coding framework, and rubric remain usable when moving beyond clean synthetic cases.
 
+## Current Dataset v0.2 Status
+
+Dataset v0.2.8 is closed after the limited coding pass.
+
+Current status:
+
+- no additional abstraction is authorized;
+- no additional coding is authorized;
+- remaining candidates remain on hold;
+- no full Dataset v0.2 expansion is authorized;
+- Research Note 002 remains prohibited;
+- no clinical validation claims, clinical guidance, diagnosis, treatment recommendation, or patient-care advice are authorized.
+
+Status documents:
+
+- [Dataset v0.2 status summary](dataset-v0.2-status-summary.md)
+- [Dataset v0.2 closure note](dataset-v0.2-closure-note.md)
+- [Future work notes](future-work-notes.md)
+
 ## Contents
 
 - [Source eligibility criteria](source-eligibility-criteria.md)
