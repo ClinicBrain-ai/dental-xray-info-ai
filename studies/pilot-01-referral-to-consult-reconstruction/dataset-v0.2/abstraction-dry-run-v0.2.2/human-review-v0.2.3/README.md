@@ -6,7 +6,7 @@ This is not coding. It is not clinical validation. It is not source abstraction 
 
 The abstractions are educational methodology artifacts. They are not real clinical documentation, are not clinical guidance, and should not be used for patient care.
 
-Human review is required before coding. The coding gate remains closed until the review forms and coding-gate decision record are completed.
+Human review was required before coding. The v0.2.4 decision opens the coding gate for `ABS-001` and `ABS-002` only, limited dry-run reconstruction coding only. The remaining 8 candidates remain on hold.
 
 Begin with the [human review handoff](human-review-handoff.md). A GitHub issue body is also available as a draft in [github-issue-draft.md](github-issue-draft.md); do not create the issue unless explicitly requested.
 
@@ -23,3 +23,4 @@ Begin with the [human review handoff](human-review-handoff.md). A GitHub issue b
 - [ABS-002 human review form](ABS-002-human-review-form.md)
 - [Review decision matrix](review-decision-matrix.md)
 - [Coding gate decision](coding-gate-decision.md)
+- [Human review decision v0.2.4](human-review-decision-v0.2.4.md)

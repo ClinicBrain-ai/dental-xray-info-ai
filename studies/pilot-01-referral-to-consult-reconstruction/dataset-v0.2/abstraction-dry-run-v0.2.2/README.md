@@ -20,10 +20,16 @@ The two abstractions are ready for human review. They are not ready for coding u
 
 ## Human Review Packet
 
-Human review is required before coding. The coding gate remains closed until review is complete, and the remaining 8 candidates should not be abstracted until the dry-run review is complete.
+Human review was required before coding. The v0.2.4 decision opens the coding gate for `ABS-001` and `ABS-002` only, limited dry-run reconstruction coding only. The remaining 8 candidates should not be abstracted until the dry-run coding results are reviewed.
 
 - [Human review README](human-review-v0.2.3/README.md)
 - [Reviewer instructions](human-review-v0.2.3/reviewer-instructions.md)
 - [ABS-001 human review form](human-review-v0.2.3/ABS-001-human-review-form.md)
 - [ABS-002 human review form](human-review-v0.2.3/ABS-002-human-review-form.md)
 - [Coding gate decision](human-review-v0.2.3/coding-gate-decision.md)
+
+## Human Review Decision v0.2.4
+
+The human review decision has opened the coding gate for `ABS-001` and `ABS-002` only, limited dry-run reconstruction coding only. The remaining 8 candidates remain on hold until dry-run coding results are reviewed.
+
+- [Human review decision v0.2.4](human-review-v0.2.3/human-review-decision-v0.2.4.md)
