@@ -17,6 +17,8 @@ This is not coding, not clinical validation, and not clinical guidance. The abst
 - [Abstraction quality review](abstraction-quality-review.md)
 - [Abstraction memo](abstraction-memo.md)
 - [Pre-push abstraction safety review](pre-push-abstraction-safety-review.md)
+- [Human abstraction review decision](human-abstraction-review-decision.md)
+- [Limited coding gate decision](limited-coding-gate-decision.md)
 
 ## Current Status
 
@@ -25,9 +27,9 @@ Two limited educational abstractions have been created:
 - `ABS-003` for `CAND-010`
 - `ABS-004` for `CAND-016`
 
-Both are `draft / second-review pending`.
+Human abstraction review has been completed for both abstractions.
 
-Coding is not authorized. Research Note 002 remains prohibited. The remaining candidates remain on hold.
+Limited coding is open for `ABS-003` and `ABS-004` only. No coding has been performed in this decision-record step. Research Note 002 remains prohibited. The remaining candidates remain on hold.
 
 ## Source-Use Boundary
 

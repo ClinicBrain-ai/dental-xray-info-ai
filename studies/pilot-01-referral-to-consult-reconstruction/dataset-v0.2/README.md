@@ -95,3 +95,13 @@ The resulting abstractions are draft methodology artifacts, not clinical documen
 - [Safeguards compliance log](abstraction-limited-v0.2.8/safeguards-compliance-log.md)
 - [Abstraction quality review](abstraction-limited-v0.2.8/abstraction-quality-review.md)
 - [Abstraction memo](abstraction-limited-v0.2.8/abstraction-memo.md)
+- [Human abstraction review decision](abstraction-limited-v0.2.8/human-abstraction-review-decision.md)
+- [Limited coding gate decision](abstraction-limited-v0.2.8/limited-coding-gate-decision.md)
+
+## Dataset v0.2.8 Human Abstraction Review Decision
+
+Human abstraction review has been completed for `ABS-003` and `ABS-004`.
+
+Gate status: `open for ABS-003 / ABS-004 limited coding only`.
+
+No coding has been performed in the decision-record step. Remaining candidates remain on hold. Research Note 002 remains prohibited.
